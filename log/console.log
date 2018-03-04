@@ -1,0 +1,633 @@
+2018-03-04 12:26:30.297 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 12:26:30.299 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 12:26:30.299 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 12:26:30.310 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 12:27:25.836 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 12:27:25.838 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 12:27:25.838 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 12:27:25.847 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 12:27:43.969 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 12:27:43.970 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 12:27:43.970 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 12:27:43.980 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 12:29:03.145 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 12:29:03.147 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 12:29:03.147 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 12:29:03.156 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 12:30:41.491 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 12:30:41.493 [error] <0.197.0>@Elixir.Logger.Watcher:init:25 CRASH REPORT Process <0.197.0> with 0 neighbours crashed with reason: no case clause matching {'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',init,2,[{file,"lib/lager_backend.ex"},{line,52}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,14}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}} in 'Elixir.Logger.Watcher':init/1 line 25
+2018-03-04 12:30:41.494 [error] <0.193.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.WatcherSupervisor' started with 'Elixir.Logger.WatcherSupervisor':start_link({'Elixir.Logger.Config',handlers,[]}) at undefined exit with reason {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',init,2,[{file,"lib/lager_backend.ex"},{line,52}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,14}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}} in context start_error
+2018-03-04 12:30:41.494 [error] <0.191.0> CRASH REPORT Process <0.191.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',init,2,[{file,"lib/lager_backend.ex"},{line,52}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,14}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,...}]}}},...},...}}},...}}}},...} in application_master:init/4 line 134
+2018-03-04 12:33:54.468 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 12:33:54.474 [error] <0.179.0>@Elixir.Logger.Watcher:init:25 CRASH REPORT Process <0.179.0> with 0 neighbours crashed with reason: no case clause matching {'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',init,2,[{file,"lib/lager_backend.ex"},{line,53}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,14}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}} in 'Elixir.Logger.Watcher':init/1 line 25
+2018-03-04 12:33:54.477 [error] <0.175.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.WatcherSupervisor' started with 'Elixir.Logger.WatcherSupervisor':start_link({'Elixir.Logger.Config',handlers,[]}) at undefined exit with reason {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',init,2,[{file,"lib/lager_backend.ex"},{line,53}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,14}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}} in context start_error
+2018-03-04 12:33:54.477 [error] <0.173.0> CRASH REPORT Process <0.173.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',init,2,[{file,"lib/lager_backend.ex"},{line,53}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,14}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,...}]}}},...},...}}},...}}}},...} in application_master:init/4 line 134
+2018-03-04 12:33:54.477 [info] <0.33.0> Application logger exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',init,2,[{file,"lib/lager_backend.ex"},{line,53}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,14}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,...}]}}},...},...}}},...}}}},...}
+2018-03-04 12:35:01.789 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 12:35:01.791 [error] <0.179.0>@Elixir.Logger.Watcher:init:25 CRASH REPORT Process <0.179.0> with 0 neighbours crashed with reason: no case clause matching {'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,14}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}} in 'Elixir.Logger.Watcher':init/1 line 25
+2018-03-04 12:35:01.796 [error] <0.175.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.WatcherSupervisor' started with 'Elixir.Logger.WatcherSupervisor':start_link({'Elixir.Logger.Config',handlers,[]}) at undefined exit with reason {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,14}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,...},...]},...}}},...}} in context start_error
+2018-03-04 12:35:01.796 [error] <0.173.0> CRASH REPORT Process <0.173.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,14}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}}}},...} in application_master:init/4 line 134
+2018-03-04 12:35:01.796 [info] <0.33.0> Application logger exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,14}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}}}},...}
+2018-03-04 12:36:27.247 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 12:36:27.248 [error] <0.179.0>@Elixir.Logger.Watcher:init:25 CRASH REPORT Process <0.179.0> with 0 neighbours crashed with reason: no case clause matching {'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,14}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}} in 'Elixir.Logger.Watcher':init/1 line 25
+2018-03-04 12:36:27.253 [error] <0.175.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.WatcherSupervisor' started with 'Elixir.Logger.WatcherSupervisor':start_link({'Elixir.Logger.Config',handlers,[]}) at undefined exit with reason {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,14}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,...},...]},...}}},...}} in context start_error
+2018-03-04 12:36:27.253 [error] <0.173.0> CRASH REPORT Process <0.173.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,14}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}}}},...} in application_master:init/4 line 134
+2018-03-04 12:36:27.254 [info] <0.33.0> Application logger exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,14}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}}}},...}
+2018-03-04 12:37:43.848 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 12:37:43.850 [error] <0.179.0>@Elixir.Logger.Watcher:init:25 CRASH REPORT Process <0.179.0> with 0 neighbours crashed with reason: no case clause matching {'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,15}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}} in 'Elixir.Logger.Watcher':init/1 line 25
+2018-03-04 12:37:43.855 [error] <0.175.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.WatcherSupervisor' started with 'Elixir.Logger.WatcherSupervisor':start_link({'Elixir.Logger.Config',handlers,[]}) at undefined exit with reason {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,15}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,...},...]},...}}},...}} in context start_error
+2018-03-04 12:37:43.855 [error] <0.173.0> CRASH REPORT Process <0.173.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,15}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}}}},...} in application_master:init/4 line 134
+2018-03-04 12:37:43.855 [info] <0.33.0> Application logger exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,15}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}}}},...}
+2018-03-04 12:39:41.731 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 12:39:41.733 [error] <0.179.0>@Elixir.Logger.Watcher:init:25 CRASH REPORT Process <0.179.0> with 0 neighbours crashed with reason: no case clause matching {'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,15}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}} in 'Elixir.Logger.Watcher':init/1 line 25
+2018-03-04 12:39:41.739 [error] <0.175.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.WatcherSupervisor' started with 'Elixir.Logger.WatcherSupervisor':start_link({'Elixir.Logger.Config',handlers,[]}) at undefined exit with reason {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,15}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,...},...]},...}}},...}} in context start_error
+2018-03-04 12:39:41.739 [error] <0.173.0> CRASH REPORT Process <0.173.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,15}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}}}},...} in application_master:init/4 line 134
+2018-03-04 12:39:41.739 [info] <0.33.0> Application logger exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,15}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}}}},...}
+2018-03-04 12:40:06.458 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 12:40:06.460 [error] <0.179.0>@Elixir.Logger.Watcher:init:25 CRASH REPORT Process <0.179.0> with 0 neighbours crashed with reason: no case clause matching {'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,17}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}} in 'Elixir.Logger.Watcher':init/1 line 25
+2018-03-04 12:40:06.465 [error] <0.175.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.WatcherSupervisor' started with 'Elixir.Logger.WatcherSupervisor':start_link({'Elixir.Logger.Config',handlers,[]}) at undefined exit with reason {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,17}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,...},...]},...}}},...}} in context start_error
+2018-03-04 12:40:06.465 [error] <0.173.0> CRASH REPORT Process <0.173.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,17}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}}}},...} in application_master:init/4 line 134
+2018-03-04 12:40:06.466 [info] <0.33.0> Application logger exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,17}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}}}},...}
+2018-03-04 12:42:40.523 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 12:42:40.525 [error] <0.179.0>@Elixir.Logger.Watcher:init:25 CRASH REPORT Process <0.179.0> with 0 neighbours crashed with reason: no case clause matching {'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,17}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}} in 'Elixir.Logger.Watcher':init/1 line 25
+2018-03-04 12:42:40.530 [error] <0.175.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.WatcherSupervisor' started with 'Elixir.Logger.WatcherSupervisor':start_link({'Elixir.Logger.Config',handlers,[]}) at undefined exit with reason {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,17}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,...},...]},...}}},...}} in context start_error
+2018-03-04 12:42:40.530 [error] <0.173.0> CRASH REPORT Process <0.173.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,17}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}}}},...} in application_master:init/4 line 134
+2018-03-04 12:42:40.531 [info] <0.33.0> Application logger exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,17}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}}}},...}
+2018-03-04 12:44:13.783 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 12:44:13.785 [error] <0.179.0>@Elixir.Logger.Watcher:init:25 CRASH REPORT Process <0.179.0> with 0 neighbours crashed with reason: no case clause matching {'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,17}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}} in 'Elixir.Logger.Watcher':init/1 line 25
+2018-03-04 12:44:13.790 [error] <0.175.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.WatcherSupervisor' started with 'Elixir.Logger.WatcherSupervisor':start_link({'Elixir.Logger.Config',handlers,[]}) at undefined exit with reason {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,17}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,...},...]},...}}},...}} in context start_error
+2018-03-04 12:44:13.790 [error] <0.173.0> CRASH REPORT Process <0.173.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,17}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}}}},...} in application_master:init/4 line 134
+2018-03-04 12:44:13.790 [info] <0.33.0> Application logger exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,17}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}}}},...}
+2018-03-04 12:44:25.081 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 12:44:25.082 [error] <0.170.0>@Elixir.Logger.Watcher:init:25 CRASH REPORT Process <0.170.0> with 0 neighbours crashed with reason: no case clause matching {'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,17}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}} in 'Elixir.Logger.Watcher':init/1 line 25
+2018-03-04 12:44:25.086 [error] <0.166.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.WatcherSupervisor' started with 'Elixir.Logger.WatcherSupervisor':start_link({'Elixir.Logger.Config',handlers,[]}) at undefined exit with reason {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,17}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,...},...]},...}}},...}} in context start_error
+2018-03-04 12:44:25.086 [error] <0.164.0> CRASH REPORT Process <0.164.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,17}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}}}},...} in application_master:init/4 line 134
+2018-03-04 12:44:25.087 [info] <0.33.0> Application logger exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,17}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}}}},...}
+2018-03-04 12:45:03.862 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 12:45:03.865 [error] <0.179.0>@Elixir.Logger.Watcher:init:25 CRASH REPORT Process <0.179.0> with 0 neighbours crashed with reason: no case clause matching {'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,18}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}} in 'Elixir.Logger.Watcher':init/1 line 25
+2018-03-04 12:45:03.869 [error] <0.175.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.WatcherSupervisor' started with 'Elixir.Logger.WatcherSupervisor':start_link({'Elixir.Logger.Config',handlers,[]}) at undefined exit with reason {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,18}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,...},...]},...}}},...}} in context start_error
+2018-03-04 12:45:03.869 [error] <0.173.0> CRASH REPORT Process <0.173.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,18}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}}}},...} in application_master:init/4 line 134
+2018-03-04 12:45:03.869 [info] <0.33.0> Application logger exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,18}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}}}},...}
+2018-03-04 13:19:29.739 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:19:29.750 [error] <0.179.0>@Elixir.Logger.Watcher:init:25 CRASH REPORT Process <0.179.0> with 0 neighbours crashed with reason: no case clause matching {'EXIT',{function_clause,[{'Elixir.IO',inspect,[stdio,nil,#{'__struct__' => 'Elixir.LagerBackend',format => nil,level => nil,metadata => nil}],[{file,"lib/io.ex"},{line,305}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,19}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}} in 'Elixir.Logger.Watcher':init/1 line 25
+2018-03-04 13:19:29.752 [error] <0.175.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.WatcherSupervisor' started with 'Elixir.Logger.WatcherSupervisor':start_link({'Elixir.Logger.Config',handlers,[]}) at undefined exit with reason {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.IO',inspect,[stdio,nil,#{'__struct__' => 'Elixir.LagerBackend',format => nil,level => nil,metadata => nil}],[{file,"lib/io.ex"},{line,305}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,19}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}} in context start_error
+2018-03-04 13:19:29.753 [error] <0.173.0> CRASH REPORT Process <0.173.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.IO',inspect,[stdio,nil,#{'__struct__' => 'Elixir.LagerBackend',format => nil,level => nil,metadata => nil}],[{file,"lib/io.ex"},{line,305}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,19}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,...}]}}},...},...}}},...}}}},...} in application_master:init/4 line 134
+2018-03-04 13:19:29.753 [info] <0.33.0> Application logger exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.IO',inspect,[stdio,nil,#{'__struct__' => 'Elixir.LagerBackend',format => nil,level => nil,metadata => nil}],[{file,"lib/io.ex"},{line,305}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,19}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,...}]}}},...},...}}},...}}}},...}
+2018-03-04 13:20:08.358 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:20:08.366 [error] <0.179.0>@Elixir.Logger.Watcher:init:25 CRASH REPORT Process <0.179.0> with 0 neighbours crashed with reason: no case clause matching {'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,20}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}} in 'Elixir.Logger.Watcher':init/1 line 25
+2018-03-04 13:20:08.369 [error] <0.175.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.WatcherSupervisor' started with 'Elixir.Logger.WatcherSupervisor':start_link({'Elixir.Logger.Config',handlers,[]}) at undefined exit with reason {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,20}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,...},...]},...}}},...}} in context start_error
+2018-03-04 13:20:08.369 [error] <0.173.0> CRASH REPORT Process <0.173.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,20}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}}}},...} in application_master:init/4 line 134
+2018-03-04 13:20:08.369 [info] <0.33.0> Application logger exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,20}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}}}},...}
+2018-03-04 13:20:54.548 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:20:54.557 [error] <0.179.0>@Elixir.Logger.Watcher:init:25 CRASH REPORT Process <0.179.0> with 0 neighbours crashed with reason: no case clause matching {'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,20}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}} in 'Elixir.Logger.Watcher':init/1 line 25
+2018-03-04 13:20:54.560 [error] <0.175.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.WatcherSupervisor' started with 'Elixir.Logger.WatcherSupervisor':start_link({'Elixir.Logger.Config',handlers,[]}) at undefined exit with reason {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,20}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,...},...]},...}}},...}} in context start_error
+2018-03-04 13:20:54.560 [error] <0.173.0> CRASH REPORT Process <0.173.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,20}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}}}},...} in application_master:init/4 line 134
+2018-03-04 13:22:31.699 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:22:31.709 [error] <0.179.0>@Elixir.Logger.Watcher:init:25 CRASH REPORT Process <0.179.0> with 0 neighbours crashed with reason: no case clause matching {'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,20}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}} in 'Elixir.Logger.Watcher':init/1 line 25
+2018-03-04 13:22:31.711 [error] <0.175.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.WatcherSupervisor' started with 'Elixir.Logger.WatcherSupervisor':start_link({'Elixir.Logger.Config',handlers,[]}) at undefined exit with reason {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,20}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,...},...]},...}}},...}} in context start_error
+2018-03-04 13:22:31.712 [error] <0.173.0> CRASH REPORT Process <0.173.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,20}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}}}},...} in application_master:init/4 line 134
+2018-03-04 13:22:46.337 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:22:46.345 [error] <0.179.0>@Elixir.Logger.Watcher:init:25 CRASH REPORT Process <0.179.0> with 0 neighbours crashed with reason: no case clause matching {'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,20}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}} in 'Elixir.Logger.Watcher':init/1 line 25
+2018-03-04 13:22:46.348 [error] <0.175.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.WatcherSupervisor' started with 'Elixir.Logger.WatcherSupervisor':start_link({'Elixir.Logger.Config',handlers,[]}) at undefined exit with reason {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,20}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,...},...]},...}}},...}} in context start_error
+2018-03-04 13:22:46.348 [error] <0.173.0> CRASH REPORT Process <0.173.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,20}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}}}},...} in application_master:init/4 line 134
+2018-03-04 13:23:01.442 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:23:01.451 [error] <0.179.0>@Elixir.Logger.Watcher:init:25 CRASH REPORT Process <0.179.0> with 0 neighbours crashed with reason: no case clause matching {'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,24}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}} in 'Elixir.Logger.Watcher':init/1 line 25
+2018-03-04 13:23:01.453 [error] <0.175.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.WatcherSupervisor' started with 'Elixir.Logger.WatcherSupervisor':start_link({'Elixir.Logger.Config',handlers,[]}) at undefined exit with reason {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,24}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,...},...]},...}}},...}} in context start_error
+2018-03-04 13:23:01.453 [error] <0.173.0> CRASH REPORT Process <0.173.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,24}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}}}},...} in application_master:init/4 line 134
+2018-03-04 13:23:01.454 [info] <0.33.0> Application logger exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,24}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}}}},...}
+2018-03-04 13:24:40.101 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:24:40.110 [error] <0.179.0>@Elixir.Logger.Watcher:init:25 CRASH REPORT Process <0.179.0> with 0 neighbours crashed with reason: no case clause matching {'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',foo,2,[{file,"lib/lager_backend.ex"},{line,72}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,22}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}} in 'Elixir.Logger.Watcher':init/1 line 25
+2018-03-04 13:24:40.112 [error] <0.175.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.WatcherSupervisor' started with 'Elixir.Logger.WatcherSupervisor':start_link({'Elixir.Logger.Config',handlers,[]}) at undefined exit with reason {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',foo,2,[{file,"lib/lager_backend.ex"},{line,72}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,22}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}} in context start_error
+2018-03-04 13:24:40.112 [error] <0.173.0> CRASH REPORT Process <0.173.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',foo,2,[{file,"lib/lager_backend.ex"},{line,72}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,22}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,...}]}}},...},...}}},...}}}},...} in application_master:init/4 line 134
+2018-03-04 13:25:13.285 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:25:13.295 [error] <0.179.0>@Elixir.Logger.Watcher:init:25 CRASH REPORT Process <0.179.0> with 0 neighbours crashed with reason: no case clause matching {'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',foo,2,[{file,"lib/lager_backend.ex"},{line,72}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,22}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}} in 'Elixir.Logger.Watcher':init/1 line 25
+2018-03-04 13:25:13.297 [error] <0.175.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.WatcherSupervisor' started with 'Elixir.Logger.WatcherSupervisor':start_link({'Elixir.Logger.Config',handlers,[]}) at undefined exit with reason {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',foo,2,[{file,"lib/lager_backend.ex"},{line,72}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,22}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}} in context start_error
+2018-03-04 13:25:13.297 [error] <0.173.0> CRASH REPORT Process <0.173.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',foo,2,[{file,"lib/lager_backend.ex"},{line,72}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,22}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,...}]}}},...},...}}},...}}}},...} in application_master:init/4 line 134
+2018-03-04 13:25:13.298 [info] <0.33.0> Application logger exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',foo,2,[{file,"lib/lager_backend.ex"},{line,72}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,22}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,...}]}}},...},...}}},...}}}},...}
+2018-03-04 13:25:20.879 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:25:20.888 [error] <0.170.0>@Elixir.Logger.Watcher:init:25 CRASH REPORT Process <0.170.0> with 0 neighbours crashed with reason: no case clause matching {'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',foo,2,[{file,"lib/lager_backend.ex"},{line,72}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,22}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}} in 'Elixir.Logger.Watcher':init/1 line 25
+2018-03-04 13:25:20.890 [error] <0.166.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.WatcherSupervisor' started with 'Elixir.Logger.WatcherSupervisor':start_link({'Elixir.Logger.Config',handlers,[]}) at undefined exit with reason {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',foo,2,[{file,"lib/lager_backend.ex"},{line,72}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,22}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}} in context start_error
+2018-03-04 13:25:20.890 [error] <0.164.0> CRASH REPORT Process <0.164.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',foo,2,[{file,"lib/lager_backend.ex"},{line,72}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,22}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,...}]}}},...},...}}},...}}}},...} in application_master:init/4 line 134
+2018-03-04 13:25:20.891 [info] <0.33.0> Application logger exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',foo,2,[{file,"lib/lager_backend.ex"},{line,72}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,22}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,...}]}}},...},...}}},...}}}},...}
+2018-03-04 13:26:10.699 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:26:10.709 [error] <0.179.0>@Elixir.Logger.Watcher:init:25 CRASH REPORT Process <0.179.0> with 0 neighbours crashed with reason: no case clause matching {'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',foo,2,[{file,"lib/lager_backend.ex"},{line,73}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,22}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}} in 'Elixir.Logger.Watcher':init/1 line 25
+2018-03-04 13:26:10.711 [error] <0.175.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.WatcherSupervisor' started with 'Elixir.Logger.WatcherSupervisor':start_link({'Elixir.Logger.Config',handlers,[]}) at undefined exit with reason {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',foo,2,[{file,"lib/lager_backend.ex"},{line,73}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,22}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}} in context start_error
+2018-03-04 13:26:10.711 [error] <0.173.0> CRASH REPORT Process <0.173.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',foo,2,[{file,"lib/lager_backend.ex"},{line,73}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,22}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,...}]}}},...},...}}},...}}}},...} in application_master:init/4 line 134
+2018-03-04 13:26:10.712 [info] <0.33.0> Application logger exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',foo,2,[{file,"lib/lager_backend.ex"},{line,73}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,22}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,...}]}}},...},...}}},...}}}},...}
+2018-03-04 13:26:55.993 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:26:56.003 [error] <0.179.0>@Elixir.Logger.Watcher:init:25 CRASH REPORT Process <0.179.0> with 0 neighbours crashed with reason: no case clause matching {'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,24}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}} in 'Elixir.Logger.Watcher':init/1 line 25
+2018-03-04 13:26:56.006 [error] <0.175.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.WatcherSupervisor' started with 'Elixir.Logger.WatcherSupervisor':start_link({'Elixir.Logger.Config',handlers,[]}) at undefined exit with reason {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,24}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,...},...]},...}}},...}} in context start_error
+2018-03-04 13:26:56.006 [error] <0.173.0> CRASH REPORT Process <0.173.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,24}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}}}},...} in application_master:init/4 line 134
+2018-03-04 13:26:56.006 [info] <0.33.0> Application logger exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,24}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}}}},...}
+2018-03-04 13:27:59.386 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:27:59.395 [error] <0.179.0>@Elixir.Logger.Watcher:init:25 CRASH REPORT Process <0.179.0> with 0 neighbours crashed with reason: no case clause matching {'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,24}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}} in 'Elixir.Logger.Watcher':init/1 line 25
+2018-03-04 13:27:59.398 [error] <0.175.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.WatcherSupervisor' started with 'Elixir.Logger.WatcherSupervisor':start_link({'Elixir.Logger.Config',handlers,[]}) at undefined exit with reason {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,24}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,...},...]},...}}},...}} in context start_error
+2018-03-04 13:27:59.398 [error] <0.173.0> CRASH REPORT Process <0.173.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,24}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}}}},...} in application_master:init/4 line 134
+2018-03-04 13:28:39.278 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:28:39.287 [error] <0.179.0>@Elixir.Logger.Watcher:init:25 CRASH REPORT Process <0.179.0> with 0 neighbours crashed with reason: no case clause matching {'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,24}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}} in 'Elixir.Logger.Watcher':init/1 line 25
+2018-03-04 13:28:39.290 [error] <0.175.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.WatcherSupervisor' started with 'Elixir.Logger.WatcherSupervisor':start_link({'Elixir.Logger.Config',handlers,[]}) at undefined exit with reason {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,24}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,...},...]},...}}},...}} in context start_error
+2018-03-04 13:28:39.290 [error] <0.173.0> CRASH REPORT Process <0.173.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,24}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',...},...]},...}}},...}}}},...} in application_master:init/4 line 134
+2018-03-04 13:28:52.138 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:28:52.149 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 13:28:52.149 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 13:28:52.157 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 13:28:52.204 [warning] <0.176.0> ** Undefined handle_info in 'Elixir.LagerBackend'
+** Unhandled message: {'EXIT',<0.204.0>,normal}
+2018-03-04 13:31:04.147 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:31:04.155 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 13:31:04.156 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 13:31:04.164 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 13:31:04.207 [warning] <0.176.0> ** Undefined handle_info in 'Elixir.LagerBackend'
+** Unhandled message: {io_reply,#Ref<0.2266037856.2869952516.111066>,ok}
+2018-03-04 13:31:04.209 [warning] <0.176.0> ** Undefined handle_info in 'Elixir.LagerBackend'
+** Unhandled message: {'EXIT',<0.204.0>,normal}
+2018-03-04 13:34:35.657 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:34:35.666 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 13:34:35.666 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 13:34:35.674 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 13:37:04.564 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:37:04.569 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 13:37:04.569 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 13:37:04.577 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 13:38:15.005 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:38:15.011 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 13:38:15.012 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 13:38:15.019 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 13:40:18.034 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:40:18.043 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 13:40:18.043 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 13:40:18.050 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 13:41:34.872 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:41:34.883 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 13:41:34.883 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 13:41:34.891 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 13:42:07.371 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:42:07.380 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 13:42:07.380 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 13:42:07.387 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 13:42:41.575 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:42:41.583 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 13:42:41.583 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 13:42:41.592 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 13:47:36.837 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:47:36.848 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 13:47:36.848 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 13:47:36.854 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 13:49:15.680 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:49:15.689 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 13:49:15.689 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 13:49:15.696 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 13:49:54.716 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:49:54.726 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 13:49:54.726 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 13:49:54.733 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 13:54:49.434 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:54:49.444 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 13:54:49.444 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 13:54:49.451 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 13:55:02.578 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:55:02.588 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 13:55:02.589 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 13:55:02.595 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 13:55:46.652 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:55:46.661 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 13:55:46.662 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 13:55:46.668 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 13:55:46.721 [error] <0.180.0>@Elixir.ExUnit.CaptureServer:handle_call:47 gen_server 'Elixir.ExUnit.CaptureServer' terminated with reason: bad argument in call to erlang:unregister(capture_prompt) in 'Elixir.ExUnit.CaptureServer':handle_call/3 line 47
+2018-03-04 13:55:46.721 [error] <0.180.0>@Elixir.ExUnit.CaptureServer:handle_call:47 CRASH REPORT Process 'Elixir.ExUnit.CaptureServer' with 0 neighbours crashed with reason: bad argument in call to erlang:unregister(capture_prompt) in 'Elixir.ExUnit.CaptureServer':handle_call/3 line 47
+2018-03-04 13:56:56.304 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:56:56.313 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 13:56:56.313 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 13:56:56.320 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 13:56:56.370 [error] <0.180.0>@Elixir.ExUnit.CaptureServer:handle_call:47 gen_server 'Elixir.ExUnit.CaptureServer' terminated with reason: bad argument in call to erlang:unregister('Elixir.LagerBackend') in 'Elixir.ExUnit.CaptureServer':handle_call/3 line 47
+2018-03-04 13:56:56.370 [error] <0.180.0>@Elixir.ExUnit.CaptureServer:handle_call:47 CRASH REPORT Process 'Elixir.ExUnit.CaptureServer' with 0 neighbours crashed with reason: bad argument in call to erlang:unregister('Elixir.LagerBackend') in 'Elixir.ExUnit.CaptureServer':handle_call/3 line 47
+2018-03-04 13:57:37.559 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:57:37.567 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 13:57:37.567 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 13:57:37.575 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 13:58:08.677 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:58:08.687 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 13:58:08.687 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 13:58:08.695 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 13:58:20.853 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:58:20.863 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 13:58:20.863 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 13:58:20.870 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 13:58:27.924 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:58:27.934 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 13:58:27.934 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 13:58:27.941 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 13:59:00.666 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 13:59:00.675 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 13:59:00.675 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 13:59:00.682 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 14:03:41.785 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 14:03:41.794 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 14:03:41.794 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 14:03:41.802 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 14:04:02.611 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 14:04:02.620 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 14:04:02.621 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 14:04:02.627 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 14:04:38.292 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 14:04:38.304 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 14:04:38.304 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 14:04:38.311 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 14:05:42.511 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 14:05:42.519 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 14:05:42.519 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 14:05:42.527 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 14:13:11.421 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 14:13:11.431 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 14:13:11.431 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 14:13:11.439 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 14:14:09.592 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 14:14:09.602 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 14:14:09.603 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 14:14:09.610 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 14:37:16.870 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 14:37:16.879 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 14:37:16.879 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 14:37:16.887 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 14:37:31.121 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 14:37:31.131 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 14:37:31.131 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 14:37:31.138 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 14:37:58.950 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 14:37:58.961 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 14:37:58.961 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 14:37:58.969 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 14:37:59.010 [info] <0.202.0>@Elixir.LagerBackendTest:test greets the world/1:7 world
+2018-03-04 15:20:48.912 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 15:20:48.913 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 15:20:48.913 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 15:20:48.924 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 15:20:55.331 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 15:20:55.332 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 15:20:55.332 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 15:20:55.342 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 15:29:27.645 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 15:29:27.646 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 15:29:27.646 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 15:29:27.654 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 15:29:43.677 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 15:29:43.679 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 15:29:43.679 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 15:29:43.688 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 15:31:00.407 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 15:31:00.408 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 15:31:00.409 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 15:31:00.417 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 15:31:00.470 [info] <0.193.0>@Elixir.LagerBackendTest:test greets the world/1:7 
+15:31:00.459 [info]  world
+
+2018-03-04 15:31:00.470 [info] <0.193.0>@Elixir.LagerBackendTest:test greets the world/1:8 
+15:31:00.459 [info]  world
+
+2018-03-04 15:31:00.470 [info] <0.193.0>@Elixir.LagerBackendTest:test greets the world/1:9 
+15:31:00.459 [info]  world
+
+2018-03-04 15:31:00.471 [info] <0.193.0>@Elixir.LagerBackendTest:test greets the world/1:10 
+15:31:00.459 [info]  world
+
+2018-03-04 15:31:00.471 [info] <0.193.0>@Elixir.LagerBackendTest:test greets the world/1:11 
+15:31:00.459 [info]  world
+
+2018-03-04 15:31:00.471 [info] <0.193.0>@Elixir.LagerBackendTest:test greets the world/1:12 
+15:31:00.459 [info]  world
+
+2018-03-04 15:31:23.649 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 15:31:23.650 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 15:31:23.651 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 15:31:23.660 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 15:31:23.710 [info] <0.193.0>@Elixir.LagerBackendTest:test greets the world/1:7 
+15:31:23.699 [info]  world
+
+2018-03-04 15:31:23.710 [info] <0.193.0>@Elixir.LagerBackendTest:test greets the world/1:8 
+15:31:23.699 [info]  world
+
+2018-03-04 15:31:23.710 [info] <0.193.0>@Elixir.LagerBackendTest:test greets the world/1:9 
+15:31:23.699 [info]  world
+
+2018-03-04 15:31:23.711 [info] <0.193.0>@Elixir.LagerBackendTest:test greets the world/1:10 
+15:31:23.699 [info]  world
+
+2018-03-04 15:31:23.711 [info] <0.193.0>@Elixir.LagerBackendTest:test greets the world/1:11 
+15:31:23.699 [info]  world
+
+2018-03-04 15:31:23.712 [info] <0.193.0>@Elixir.LagerBackendTest:test greets the world/1:12 
+15:31:23.699 [info]  world
+
+2018-03-04 15:31:33.215 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 15:31:33.217 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 15:31:33.217 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 15:31:33.227 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 15:31:33.275 [info] <0.193.0>@Elixir.LagerBackendTest:test greets the world/1:7 
+15:31:33.264 [info]  world
+
+2018-03-04 15:32:21.288 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 15:32:21.289 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 15:32:21.290 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 15:32:21.298 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 15:32:21.343 [info] <0.202.0>@Elixir.LagerBackendTest:test greets the world/1:7 FORMAT ERROR: "~ts" [<<"\n">>,[<<"15">>,58,<<"32">>,58,<<"21">>,46,<<"334">>],<<" ">>,<<>>,<<"[">>,<<"info">>,<<"] ">>,<<" ">>,<<"world">>,<<"\n">>]
+2018-03-04 15:34:11.118 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 15:34:11.119 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 15:34:11.119 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 15:34:11.129 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 15:34:11.185 [info] <0.202.0>@Elixir.LagerBackendTest:test greets the world/1:7 
+15:34:11.172 [info]  world
+
+2018-03-04 15:35:09.973 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 15:35:09.974 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 15:35:09.974 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 15:35:09.982 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 15:35:10.029 [info] <0.202.0>@Elixir.LagerBackendTest:test greets the world/1:7 
+15:35:10.019 [info]  world
+
+2018-03-04 15:37:21.426 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 15:37:21.433 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 15:37:21.433 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 15:37:21.441 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 15:37:21.476 [info] <0.202.0>@Elixir.LagerBackendTest:test greets the world/1:7 
+15:37:21.476 [info]  world
+
+2018-03-04 15:37:26.157 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 15:37:26.164 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 15:37:26.165 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 15:37:26.171 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 15:37:26.211 [info] <0.193.0>@Elixir.LagerBackendTest:test greets the world/1:7 
+15:37:26.211 [info]  world
+
+2018-03-04 15:39:12.915 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 15:39:12.920 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 15:39:12.920 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 15:39:12.928 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 15:39:12.962 [info] <0.220.0>@Elixir.LagerBackendTest:test greets the world/1:7 15:39:12.962 [info] world - 
+2018-03-04 15:40:38.555 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 15:40:38.563 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 15:40:38.564 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 15:40:38.571 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 15:40:38.607 [info] <0.202.0>@Elixir.LagerBackendTest:test greets the world/1:7 15:40:38.607 [info] world - 
+2018-03-04 15:40:47.234 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 15:40:47.243 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 15:40:47.244 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 15:40:47.250 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 15:40:47.290 [info] <0.193.0>@Elixir.LagerBackendTest:test greets the world/1:7 15:40:47.290 [info] world - 
+2018-03-04 15:41:00.331 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 15:41:00.340 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 15:41:00.340 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 15:41:00.347 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 15:41:00.387 [info] <0.202.0>@Elixir.LagerBackendTest:test greets the world/1:7 FORMAT ERROR: [] [[[<<"15">>,58,<<"41">>,58,[48,<<"0">>],46,<<"387">>],<<" [">>,<<"info">>,<<"] ">>,<<"world">>,<<" - ">>,<<>>]]
+2018-03-04 15:43:58.521 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 15:43:58.530 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 15:43:58.530 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 15:43:58.539 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 15:43:58.578 [info] <0.202.0>@Elixir.LagerBackendTest:test greets the world/1:7 15:43:58.578 [info] world - 
+2018-03-04 15:44:48.949 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 15:44:48.955 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 15:44:48.955 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 15:44:48.963 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 15:44:48.996 [info] <0.220.0>@Elixir.LagerBackendTest:test greets the world/1:7 world - 
+2018-03-04 15:45:47.012 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 15:45:47.020 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 15:45:47.020 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 15:45:47.027 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 15:45:47.065 [info] <0.202.0>@Elixir.LagerBackendTest:test greets the world/1:7 world - 
+2018-03-04 15:46:06.166 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 15:46:06.171 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 15:46:06.172 [info] <0.33.0> Application lager_backend started on node nonode@nohost
+2018-03-04 15:46:06.179 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 15:46:06.213 [info] <0.220.0>@Elixir.LagerBackendTest:test greets the world/1:7 world - module=LagerBackendTest 
+2018-03-04 15:59:28.942 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 15:59:28.947 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 15:59:28.948 [info] <0.33.0> Application lager_log_backend started on node nonode@nohost
+2018-03-04 15:59:28.956 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 15:59:28.994 [info] <0.220.0>@Elixir.LagerLogBackendTest:test greets the world/1:7 world - module=LagerLogBackendTest 
+2018-03-04 16:02:44.443 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 16:02:44.451 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 16:02:44.452 [info] <0.33.0> Application lager_log_backend started on node nonode@nohost
+2018-03-04 16:02:44.458 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 16:02:44.501 [info] <0.193.0>@Elixir.LagerLogBackendTest:test greets the world/1:7 world - module=LagerLogBackendTest 
+2018-03-04 16:02:55.724 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 16:02:55.733 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 16:02:55.733 [info] <0.33.0> Application lager_log_backend started on node nonode@nohost
+2018-03-04 16:02:55.741 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 16:02:55.784 [info] <0.193.0>@Elixir.LagerLogBackendTest:test greets the world/1:7 world - module=LagerLogBackendTest 
+2018-03-04 16:03:00.371 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 16:03:00.380 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 16:03:00.380 [info] <0.33.0> Application lager_log_backend started on node nonode@nohost
+2018-03-04 16:03:00.387 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 16:03:00.431 [info] <0.193.0>@Elixir.LagerLogBackendTest:test greets the world/1:7 world - module=LagerLogBackendTest 
+2018-03-04 16:03:02.187 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 16:03:02.195 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 16:03:02.195 [info] <0.33.0> Application lager_log_backend started on node nonode@nohost
+2018-03-04 16:03:02.202 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 16:03:02.246 [info] <0.193.0>@Elixir.LagerLogBackendTest:test greets the world/1:7 world - module=LagerLogBackendTest 
+2018-03-04 16:03:04.221 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 16:03:04.229 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 16:03:04.229 [info] <0.33.0> Application lager_log_backend started on node nonode@nohost
+2018-03-04 16:03:04.236 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 16:03:04.281 [info] <0.193.0>@Elixir.LagerLogBackendTest:test greets the world/1:7 world - module=LagerLogBackendTest 
+2018-03-04 16:06:16.485 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 16:06:16.487 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 16:06:16.487 [info] <0.33.0> Application lager_log_backend started on node nonode@nohost
+2018-03-04 16:06:16.495 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 16:06:16.530 [info] <0.220.0>@Elixir.LagerLogBackendTest:test greets the world/1:7 world - module=LagerLogBackendTest 
+2018-03-04 16:12:07.918 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 16:12:07.919 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 16:12:07.924 [info] <0.33.0> Application bunt started on node nonode@nohost
+2018-03-04 16:12:07.924 [info] <0.33.0> Application credo started on node nonode@nohost
+2018-03-04 16:12:07.924 [info] <0.33.0> Application lager_log_backend started on node nonode@nohost
+2018-03-04 16:12:07.935 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 16:12:07.974 [info] <0.1114.0>@Elixir.LagerLogBackendTest:test greets the world/1:7 world - module=LagerLogBackendTest 
+2018-03-04 16:13:39.427 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 16:13:39.428 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 16:13:39.434 [info] <0.33.0> Application bunt started on node nonode@nohost
+2018-03-04 16:13:39.439 [info] <0.33.0> Application credo started on node nonode@nohost
+2018-03-04 16:13:39.439 [info] <0.33.0> Application lager_log_backend started on node nonode@nohost
+2018-03-04 16:13:39.446 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 16:13:39.485 [info] <0.217.0>@Elixir.LagerLogBackendTest:test greets the world/1:7 world - module=LagerLogBackendTest 
+2018-03-04 16:14:50.861 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 16:14:50.863 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 16:14:50.869 [info] <0.33.0> Application bunt started on node nonode@nohost
+2018-03-04 16:14:50.875 [info] <0.33.0> Application credo started on node nonode@nohost
+2018-03-04 16:14:50.875 [info] <0.33.0> Application lager_log_backend started on node nonode@nohost
+2018-03-04 16:14:50.883 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 16:14:50.925 [info] <0.208.0>@Elixir.LagerLogBackendTest:test greets the world/1:7 info - module=LagerLogBackendTest 
+2018-03-04 16:14:50.925 [warning] <0.208.0>@Elixir.LagerLogBackendTest:test greets the world/1:8 warn - module=LagerLogBackendTest 
+2018-03-04 16:14:50.925 [error] <0.208.0>@Elixir.LagerLogBackendTest:test greets the world/1:9 error - module=LagerLogBackendTest 
+2018-03-04 16:15:16.457 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 16:15:16.458 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 16:15:16.463 [info] <0.33.0> Application bunt started on node nonode@nohost
+2018-03-04 16:15:16.469 [info] <0.33.0> Application credo started on node nonode@nohost
+2018-03-04 16:15:16.469 [info] <0.33.0> Application lager_log_backend started on node nonode@nohost
+2018-03-04 16:15:16.478 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 16:15:16.514 [info] <0.235.0>@Elixir.LagerLogBackendTest:test greets the world/1:7 info - module=LagerLogBackendTest 
+2018-03-04 16:15:16.514 [warning] <0.235.0>@Elixir.LagerLogBackendTest:test greets the world/1:8 warn - module=LagerLogBackendTest 
+2018-03-04 16:15:16.514 [error] <0.235.0>@Elixir.LagerLogBackendTest:test greets the world/1:9 error - module=LagerLogBackendTest 
+2018-03-04 16:16:23.593 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 16:16:23.594 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 16:16:23.599 [info] <0.33.0> Application bunt started on node nonode@nohost
+2018-03-04 16:16:23.604 [info] <0.33.0> Application credo started on node nonode@nohost
+2018-03-04 16:16:23.604 [info] <0.33.0> Application lager_log_backend started on node nonode@nohost
+2018-03-04 16:16:23.612 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 16:16:53.751 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 16:16:53.752 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 16:16:53.758 [info] <0.33.0> Application bunt started on node nonode@nohost
+2018-03-04 16:16:53.764 [info] <0.33.0> Application credo started on node nonode@nohost
+2018-03-04 16:16:53.764 [info] <0.33.0> Application lager_log_backend started on node nonode@nohost
+2018-03-04 16:16:53.772 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 16:16:53.820 [info] <0.208.0>@Elixir.LagerLogBackendTest:test greets the world/1:7 info - module=LagerLogBackendTest 
+2018-03-04 16:16:53.820 [warning] <0.208.0>@Elixir.LagerLogBackendTest:test greets the world/1:8 warn - module=LagerLogBackendTest 
+2018-03-04 16:16:53.821 [error] <0.208.0>@Elixir.LagerLogBackendTest:test greets the world/1:9 error - module=LagerLogBackendTest 
+2018-03-04 16:18:30.922 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 16:18:30.923 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 16:18:30.929 [info] <0.33.0> Application bunt started on node nonode@nohost
+2018-03-04 16:18:30.935 [info] <0.33.0> Application credo started on node nonode@nohost
+2018-03-04 16:18:30.935 [info] <0.33.0> Application lager_log_backend started on node nonode@nohost
+2018-03-04 16:18:30.942 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 16:20:21.528 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 16:20:21.529 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 16:20:21.534 [info] <0.33.0> Application bunt started on node nonode@nohost
+2018-03-04 16:20:21.540 [info] <0.33.0> Application credo started on node nonode@nohost
+2018-03-04 16:20:21.540 [info] <0.33.0> Application lager_log_backend started on node nonode@nohost
+2018-03-04 16:20:21.547 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 16:20:21.594 [info] <0.208.0>@Elixir.LagerLogBackendTest:test greets the world/1:8 info - module=LagerLogBackendTest 
+2018-03-04 16:20:21.594 [warning] <0.208.0>@Elixir.LagerLogBackendTest:test greets the world/1:9 warn - module=LagerLogBackendTest 
+2018-03-04 16:20:21.594 [error] <0.208.0>@Elixir.LagerLogBackendTest:test greets the world/1:10 error - module=LagerLogBackendTest 
+2018-03-04 16:20:50.076 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 16:20:50.077 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 16:20:50.083 [info] <0.33.0> Application bunt started on node nonode@nohost
+2018-03-04 16:20:50.091 [info] <0.33.0> Application credo started on node nonode@nohost
+2018-03-04 16:20:50.091 [info] <0.33.0> Application lager_log_backend started on node nonode@nohost
+2018-03-04 16:20:50.098 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 16:20:50.146 [info] <0.208.0>@Elixir.LagerLogBackendTest:test greets the world/1:8 info - module=LagerLogBackendTest 
+2018-03-04 16:20:50.146 [warning] <0.208.0>@Elixir.LagerLogBackendTest:test greets the world/1:9 warn - module=LagerLogBackendTest 
+2018-03-04 16:20:50.146 [error] <0.208.0>@Elixir.LagerLogBackendTest:test greets the world/1:10 error - module=LagerLogBackendTest 
+2018-03-04 16:22:35.729 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 16:22:35.730 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 16:22:35.736 [info] <0.33.0> Application bunt started on node nonode@nohost
+2018-03-04 16:22:35.742 [info] <0.33.0> Application credo started on node nonode@nohost
+2018-03-04 16:22:35.742 [info] <0.33.0> Application lager_log_backend started on node nonode@nohost
+2018-03-04 16:22:35.749 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 16:22:35.795 [info] <0.217.0>@Elixir.LagerLogBackendTest:test greets the world/1:8 info - module=LagerLogBackendTest 
+2018-03-04 16:22:35.795 [warning] <0.217.0>@Elixir.LagerLogBackendTest:test greets the world/1:9 warn - module=LagerLogBackendTest 
+2018-03-04 16:22:35.795 [error] <0.217.0>@Elixir.LagerLogBackendTest:test greets the world/1:10 error - module=LagerLogBackendTest 
+2018-03-04 16:27:23.601 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 16:27:23.603 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 16:27:23.609 [info] <0.33.0> Application bunt started on node nonode@nohost
+2018-03-04 16:27:23.615 [info] <0.33.0> Application credo started on node nonode@nohost
+2018-03-04 16:27:23.615 [info] <0.33.0> Application lager_log_backend started on node nonode@nohost
+2018-03-04 16:27:23.624 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 16:27:23.664 [info] <0.217.0>@Elixir.LagerLogBackendTest:test greets the world/1:8 info - module=LagerLogBackendTest 
+2018-03-04 16:27:23.664 [warning] <0.217.0>@Elixir.LagerLogBackendTest:test greets the world/1:9 warn - module=LagerLogBackendTest 
+2018-03-04 16:27:23.664 [error] <0.217.0>@Elixir.LagerLogBackendTest:test greets the world/1:10 error - module=LagerLogBackendTest 
+2018-03-04 16:40:15.709 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 16:40:15.710 [error] <0.199.0>@Elixir.Logger.Watcher:init:25 CRASH REPORT Process <0.199.0> with 0 neighbours crashed with reason: no case clause matching {'EXIT',{undef,[{'Elixir.LagerLogBackend',init,['Elixir.LagerLogBackend'],[]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}} in 'Elixir.Logger.Watcher':init/1 line 25
+2018-03-04 16:40:15.710 [error] <0.195.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.WatcherSupervisor' started with 'Elixir.Logger.WatcherSupervisor':start_link({'Elixir.Logger.Config',handlers,[]}) at undefined exit with reason {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{undef,[{'Elixir.LagerLogBackend',init,['Elixir.LagerLogBackend'],[]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_serve..."},...]},...]},...}}},...}} in context start_error
+2018-03-04 16:40:15.710 [error] <0.193.0> CRASH REPORT Process <0.193.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{undef,[{'Elixir.LagerLogBackend',init,['Elixir.LagerLogBackend'],[]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"..."},...]},...]},...}}},...}}}},...} in application_master:init/4 line 134
+2018-03-04 16:41:37.319 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 16:41:37.320 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 16:41:37.325 [info] <0.33.0> Application bunt started on node nonode@nohost
+2018-03-04 16:41:37.331 [info] <0.33.0> Application credo started on node nonode@nohost
+2018-03-04 16:41:37.331 [info] <0.33.0> Application log_lager_backend started on node nonode@nohost
+2018-03-04 16:41:37.341 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 16:41:37.380 [info] <0.235.0>@Elixir.LogLagerBackendTest:test greets the world/1:8 info - module=LogLagerBackendTest 
+2018-03-04 16:41:37.380 [warning] <0.235.0>@Elixir.LogLagerBackendTest:test greets the world/1:9 warn - module=LogLagerBackendTest 
+2018-03-04 16:41:37.380 [error] <0.235.0>@Elixir.LogLagerBackendTest:test greets the world/1:10 error - module=LogLagerBackendTest 
+2018-03-04 16:46:02.740 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 16:46:02.741 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 16:46:02.746 [info] <0.33.0> Application bunt started on node nonode@nohost
+2018-03-04 16:46:02.753 [info] <0.33.0> Application credo started on node nonode@nohost
+2018-03-04 16:46:02.753 [info] <0.33.0> Application log_lager_backend started on node nonode@nohost
+2018-03-04 16:46:02.761 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 16:46:02.804 [info] <0.208.0>@Elixir.LogLagerBackendTest:test greets the world/1:8 info - module=LogLagerBackendTest 
+2018-03-04 16:46:02.804 [warning] <0.208.0>@Elixir.LogLagerBackendTest:test greets the world/1:9 warn - module=LogLagerBackendTest 
+2018-03-04 16:46:02.804 [error] <0.208.0>@Elixir.LogLagerBackendTest:test greets the world/1:10 error - module=LogLagerBackendTest 
+2018-03-04 16:56:00.569 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 16:56:00.570 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 16:56:00.575 [info] <0.33.0> Application bunt started on node nonode@nohost
+2018-03-04 16:56:00.576 [info] <0.33.0> Application credo started on node nonode@nohost
+2018-03-04 16:56:00.576 [info] <0.33.0> Application log_lager_backend started on node nonode@nohost
+2018-03-04 16:56:00.586 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 16:56:00.627 [info] <0.1116.0>@Elixir.LogLagerBackendTest:test greets the world/1:8 info - module=LogLagerBackendTest 
+2018-03-04 16:56:00.627 [warning] <0.1116.0>@Elixir.LogLagerBackendTest:test greets the world/1:9 warn - module=LogLagerBackendTest 
+2018-03-04 16:56:00.627 [error] <0.1116.0>@Elixir.LogLagerBackendTest:test greets the world/1:10 error - module=LogLagerBackendTest 
+2018-03-04 16:58:42.748 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 16:58:42.749 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 16:58:42.755 [info] <0.33.0> Application bunt started on node nonode@nohost
+2018-03-04 16:58:42.761 [info] <0.33.0> Application credo started on node nonode@nohost
+2018-03-04 16:58:42.761 [info] <0.33.0> Application log_lager_backend started on node nonode@nohost
+2018-03-04 16:58:42.771 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 16:58:42.812 [error] <0.236.0>@Elixir.Logger.Watcher:init:25 CRASH REPORT Process <0.236.0> with 0 neighbours crashed with reason: no case clause matching {'EXIT',{function_clause,[{'Elixir.Keyword',merge,[nil,[]],[{file,"lib/keyword.ex"},{line,673}]},{'Elixir.LogLagerBackend',init,1,[{file,"lib/log_lager_backend.ex"},{line,18}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}} in 'Elixir.Logger.Watcher':init/1 line 25
+2018-03-04 17:00:58.883 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 17:00:58.884 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 17:00:58.889 [info] <0.33.0> Application bunt started on node nonode@nohost
+2018-03-04 17:00:58.894 [info] <0.33.0> Application credo started on node nonode@nohost
+2018-03-04 17:00:58.894 [info] <0.33.0> Application log_lager_backend started on node nonode@nohost
+2018-03-04 17:00:58.902 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 17:00:58.944 [error] <0.209.0>@Elixir.Logger.Watcher:init:25 CRASH REPORT Process <0.209.0> with 0 neighbours crashed with reason: no case clause matching {'EXIT',{function_clause,[{'Elixir.Keyword',merge,[nil,[]],[{file,"lib/keyword.ex"},{line,673}]},{'Elixir.LogLagerBackend',init,1,[{file,"lib/log_lager_backend.ex"},{line,18}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}} in 'Elixir.Logger.Watcher':init/1 line 25
+2018-03-04 17:03:13.899 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 17:03:13.900 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 17:03:13.905 [info] <0.33.0> Application bunt started on node nonode@nohost
+2018-03-04 17:03:13.911 [info] <0.33.0> Application credo started on node nonode@nohost
+2018-03-04 17:03:13.911 [info] <0.33.0> Application log_lager_backend started on node nonode@nohost
+2018-03-04 17:03:13.920 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 17:03:13.956 [error] <0.218.0>@Elixir.Logger.Watcher:init:25 CRASH REPORT Process <0.218.0> with 0 neighbours crashed with reason: no case clause matching {'EXIT',{function_clause,[{'Elixir.Keyword',merge,[nil,[]],[{file,"lib/keyword.ex"},{line,673}]},{'Elixir.LogLagerBackend',init,1,[{file,"lib/log_lager_backend.ex"},{line,18}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}} in 'Elixir.Logger.Watcher':init/1 line 25
+2018-03-04 17:05:34.316 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 17:05:34.318 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 17:05:34.323 [info] <0.33.0> Application bunt started on node nonode@nohost
+2018-03-04 17:05:34.328 [info] <0.33.0> Application credo started on node nonode@nohost
+2018-03-04 17:05:34.328 [info] <0.33.0> Application log_lager_backend started on node nonode@nohost
+2018-03-04 17:05:34.337 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 17:05:34.376 [info] <0.217.0>@Elixir.LogLagerBackendTest:test greets the world/1:14 
+17:05:34.376 [info]  info
+
+2018-03-04 17:05:34.376 [warning] <0.217.0>@Elixir.LogLagerBackendTest:test greets the world/1:15 
+17:05:34.376 [warn]  warn
+
+2018-03-04 17:05:34.376 [error] <0.217.0>@Elixir.LogLagerBackendTest:test greets the world/1:16 
+17:05:34.376 [error] error
+
+2018-03-04 17:05:56.463 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 17:05:56.464 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 17:05:56.470 [info] <0.33.0> Application bunt started on node nonode@nohost
+2018-03-04 17:05:56.476 [info] <0.33.0> Application credo started on node nonode@nohost
+2018-03-04 17:05:56.476 [info] <0.33.0> Application log_lager_backend started on node nonode@nohost
+2018-03-04 17:05:56.485 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 17:05:56.532 [info] <0.208.0>@Elixir.LogLagerBackendTest:test greets the world/1:14 info - 
+
+2018-03-04 17:05:56.532 [warning] <0.208.0>@Elixir.LogLagerBackendTest:test greets the world/1:15 warn - 
+
+2018-03-04 17:05:56.532 [error] <0.208.0>@Elixir.LogLagerBackendTest:test greets the world/1:16 error - 
+
+2018-03-04 17:06:45.506 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 17:06:45.508 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 17:06:45.514 [info] <0.33.0> Application bunt started on node nonode@nohost
+2018-03-04 17:06:45.519 [info] <0.33.0> Application credo started on node nonode@nohost
+2018-03-04 17:06:45.519 [info] <0.33.0> Application log_lager_backend started on node nonode@nohost
+2018-03-04 17:06:45.527 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 17:07:08.243 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 17:07:08.244 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 17:07:08.249 [info] <0.33.0> Application bunt started on node nonode@nohost
+2018-03-04 17:07:08.254 [info] <0.33.0> Application credo started on node nonode@nohost
+2018-03-04 17:07:08.254 [info] <0.33.0> Application log_lager_backend started on node nonode@nohost
+2018-03-04 17:07:08.262 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 17:07:08.305 [info] <0.208.0>@Elixir.LogLagerBackendTest:test greets the world/1:16 info - module=LogLagerBackendTest 
+
+2018-03-04 17:07:08.305 [warning] <0.208.0>@Elixir.LogLagerBackendTest:test greets the world/1:17 warn - module=LogLagerBackendTest 
+
+2018-03-04 17:07:08.305 [error] <0.208.0>@Elixir.LogLagerBackendTest:test greets the world/1:18 error - module=LogLagerBackendTest 
+
+2018-03-04 20:10:10.648 [info] <0.33.0> Application lager started on node nonode@nohost
+2018-03-04 20:10:10.650 [info] <0.33.0> Application logger started on node nonode@nohost
+2018-03-04 20:10:10.655 [info] <0.33.0> Application bunt started on node nonode@nohost
+2018-03-04 20:10:10.655 [info] <0.33.0> Application credo started on node nonode@nohost
+2018-03-04 20:10:10.655 [info] <0.33.0> Application log_lager_backend started on node nonode@nohost
+2018-03-04 20:10:10.666 [info] <0.33.0> Application ex_unit started on node nonode@nohost
+2018-03-04 20:10:10.710 [info] <0.1116.0>@Elixir.LogLagerBackendTest:test greets the world/1:16 info - module=LogLagerBackendTest 
+
+2018-03-04 20:10:10.710 [warning] <0.1116.0>@Elixir.LogLagerBackendTest:test greets the world/1:17 warn - module=LogLagerBackendTest 
+
+2018-03-04 20:10:10.710 [error] <0.1116.0>@Elixir.LogLagerBackendTest:test greets the world/1:18 error - module=LogLagerBackendTest 
+

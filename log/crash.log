@@ -1,0 +1,1113 @@
+2018-03-04 12:30:41 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Logger.Watcher:init/1
+    pid: <0.197.0>
+    registered_name: []
+    exception error: {{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',init,2,[{file,"lib/lager_backend.ex"},{line,52}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,14}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Logger.WatcherSupervisor','Elixir.Logger.Supervisor',<0.192.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.196.0>,<0.194.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 236
+  neighbours:
+2018-03-04 12:30:41 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',init,2,[{file,"lib/lager_backend.ex"},{line,52}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,14}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Logger.WatcherSupervisor'},{mfargs,{'Elixir.Logger.WatcherSupervisor',start_link,[{'Elixir.Logger.Config',handlers,[]}]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-03-04 12:30:41 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.191.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',init,2,[{file,"lib/lager_backend.ex"},{line,52}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,14}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}}},{'Elixir.Logger.App',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.190.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.192.0>,normal}]
+    links: [<0.190.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 158
+  neighbours:
+2018-03-04 12:33:54 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Logger.Watcher:init/1
+    pid: <0.179.0>
+    registered_name: []
+    exception error: {{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',init,2,[{file,"lib/lager_backend.ex"},{line,53}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,14}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Logger.WatcherSupervisor','Elixir.Logger.Supervisor',<0.174.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.178.0>,<0.176.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 236
+  neighbours:
+2018-03-04 12:33:54 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',init,2,[{file,"lib/lager_backend.ex"},{line,53}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,14}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Logger.WatcherSupervisor'},{mfargs,{'Elixir.Logger.WatcherSupervisor',start_link,[{'Elixir.Logger.Config',handlers,[]}]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-03-04 12:33:54 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.173.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',init,2,[{file,"lib/lager_backend.ex"},{line,53}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,14}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}}},{'Elixir.Logger.App',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.172.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.174.0>,normal}]
+    links: [<0.172.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 160
+  neighbours:
+2018-03-04 12:35:01 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Logger.Watcher:init/1
+    pid: <0.179.0>
+    registered_name: []
+    exception error: {{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,14}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Logger.WatcherSupervisor','Elixir.Logger.Supervisor',<0.174.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.178.0>,<0.176.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 229
+  neighbours:
+2018-03-04 12:35:01 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,14}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Logger.WatcherSupervisor'},{mfargs,{'Elixir.Logger.WatcherSupervisor',start_link,[{'Elixir.Logger.Config',handlers,[]}]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-03-04 12:35:01 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.173.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,14}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}}},{'Elixir.Logger.App',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.172.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.174.0>,normal}]
+    links: [<0.172.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 158
+  neighbours:
+2018-03-04 12:36:27 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Logger.Watcher:init/1
+    pid: <0.179.0>
+    registered_name: []
+    exception error: {{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,14}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Logger.WatcherSupervisor','Elixir.Logger.Supervisor',<0.174.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.178.0>,<0.176.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 229
+  neighbours:
+2018-03-04 12:36:27 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,14}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Logger.WatcherSupervisor'},{mfargs,{'Elixir.Logger.WatcherSupervisor',start_link,[{'Elixir.Logger.Config',handlers,[]}]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-03-04 12:36:27 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.173.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,14}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}}},{'Elixir.Logger.App',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.172.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.174.0>,normal}]
+    links: [<0.172.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 158
+  neighbours:
+2018-03-04 12:37:43 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Logger.Watcher:init/1
+    pid: <0.179.0>
+    registered_name: []
+    exception error: {{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,15}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Logger.WatcherSupervisor','Elixir.Logger.Supervisor',<0.174.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.178.0>,<0.176.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 229
+  neighbours:
+2018-03-04 12:37:43 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,15}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Logger.WatcherSupervisor'},{mfargs,{'Elixir.Logger.WatcherSupervisor',start_link,[{'Elixir.Logger.Config',handlers,[]}]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-03-04 12:37:43 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.173.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,15}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}}},{'Elixir.Logger.App',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.172.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.174.0>,normal}]
+    links: [<0.172.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 158
+  neighbours:
+2018-03-04 12:39:41 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Logger.Watcher:init/1
+    pid: <0.179.0>
+    registered_name: []
+    exception error: {{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,15}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Logger.WatcherSupervisor','Elixir.Logger.Supervisor',<0.174.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.178.0>,<0.176.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 229
+  neighbours:
+2018-03-04 12:39:41 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,15}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Logger.WatcherSupervisor'},{mfargs,{'Elixir.Logger.WatcherSupervisor',start_link,[{'Elixir.Logger.Config',handlers,[]}]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-03-04 12:39:41 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.173.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,15}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}}},{'Elixir.Logger.App',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.172.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.174.0>,normal}]
+    links: [<0.172.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 158
+  neighbours:
+2018-03-04 12:40:06 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Logger.Watcher:init/1
+    pid: <0.179.0>
+    registered_name: []
+    exception error: {{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,17}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Logger.WatcherSupervisor','Elixir.Logger.Supervisor',<0.174.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.178.0>,<0.176.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 229
+  neighbours:
+2018-03-04 12:40:06 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,17}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Logger.WatcherSupervisor'},{mfargs,{'Elixir.Logger.WatcherSupervisor',start_link,[{'Elixir.Logger.Config',handlers,[]}]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-03-04 12:40:06 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.173.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,17}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}}},{'Elixir.Logger.App',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.172.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.174.0>,normal}]
+    links: [<0.172.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 158
+  neighbours:
+2018-03-04 12:42:40 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Logger.Watcher:init/1
+    pid: <0.179.0>
+    registered_name: []
+    exception error: {{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,17}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Logger.WatcherSupervisor','Elixir.Logger.Supervisor',<0.174.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.178.0>,<0.176.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 229
+  neighbours:
+2018-03-04 12:42:40 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,17}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Logger.WatcherSupervisor'},{mfargs,{'Elixir.Logger.WatcherSupervisor',start_link,[{'Elixir.Logger.Config',handlers,[]}]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-03-04 12:42:40 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.173.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,17}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}}},{'Elixir.Logger.App',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.172.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.174.0>,normal}]
+    links: [<0.172.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 158
+  neighbours:
+2018-03-04 12:44:13 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Logger.Watcher:init/1
+    pid: <0.179.0>
+    registered_name: []
+    exception error: {{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,17}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Logger.WatcherSupervisor','Elixir.Logger.Supervisor',<0.174.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.178.0>,<0.176.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 229
+  neighbours:
+2018-03-04 12:44:13 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,17}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Logger.WatcherSupervisor'},{mfargs,{'Elixir.Logger.WatcherSupervisor',start_link,[{'Elixir.Logger.Config',handlers,[]}]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-03-04 12:44:13 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.173.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,17}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}}},{'Elixir.Logger.App',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.172.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.174.0>,normal}]
+    links: [<0.172.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 158
+  neighbours:
+2018-03-04 12:44:25 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Logger.Watcher:init/1
+    pid: <0.170.0>
+    registered_name: []
+    exception error: {{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,17}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Logger.WatcherSupervisor','Elixir.Logger.Supervisor',<0.165.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.169.0>,<0.167.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 229
+  neighbours:
+2018-03-04 12:44:25 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,17}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Logger.WatcherSupervisor'},{mfargs,{'Elixir.Logger.WatcherSupervisor',start_link,[{'Elixir.Logger.Config',handlers,[]}]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-03-04 12:44:25 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.164.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,17}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}}},{'Elixir.Logger.App',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.163.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.165.0>,normal}]
+    links: [<0.163.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 158
+  neighbours:
+2018-03-04 12:45:03 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Logger.Watcher:init/1
+    pid: <0.179.0>
+    registered_name: []
+    exception error: {{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,18}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Logger.WatcherSupervisor','Elixir.Logger.Supervisor',<0.174.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.178.0>,<0.176.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 229
+  neighbours:
+2018-03-04 12:45:03 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,18}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Logger.WatcherSupervisor'},{mfargs,{'Elixir.Logger.WatcherSupervisor',start_link,[{'Elixir.Logger.Config',handlers,[]}]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-03-04 12:45:03 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.173.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,18}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}}},{'Elixir.Logger.App',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.172.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.174.0>,normal}]
+    links: [<0.172.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 160
+  neighbours:
+2018-03-04 13:19:29 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Logger.Watcher:init/1
+    pid: <0.179.0>
+    registered_name: []
+    exception error: {{case_clause,{'EXIT',{function_clause,[{'Elixir.IO',inspect,[stdio,nil,#{'__struct__' => 'Elixir.LagerBackend',format => nil,level => nil,metadata => nil}],[{file,"lib/io.ex"},{line,305}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,19}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Logger.WatcherSupervisor','Elixir.Logger.Supervisor',<0.174.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.178.0>,<0.176.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 227
+  neighbours:
+2018-03-04 13:19:29 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.IO',inspect,[stdio,nil,#{'__struct__' => 'Elixir.LagerBackend',format => nil,level => nil,metadata => nil}],[{file,"lib/io.ex"},{line,305}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,19}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Logger.WatcherSupervisor'},{mfargs,{'Elixir.Logger.WatcherSupervisor',start_link,[{'Elixir.Logger.Config',handlers,[]}]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-03-04 13:19:29 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.173.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.IO',inspect,[stdio,nil,#{'__struct__' => 'Elixir.LagerBackend',format => nil,level => nil,metadata => nil}],[{file,"lib/io.ex"},{line,305}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,19}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}}},{'Elixir.Logger.App',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.172.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.174.0>,normal}]
+    links: [<0.172.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 162
+  neighbours:
+2018-03-04 13:20:08 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Logger.Watcher:init/1
+    pid: <0.179.0>
+    registered_name: []
+    exception error: {{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,20}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Logger.WatcherSupervisor','Elixir.Logger.Supervisor',<0.174.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.178.0>,<0.176.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 229
+  neighbours:
+2018-03-04 13:20:08 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,20}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Logger.WatcherSupervisor'},{mfargs,{'Elixir.Logger.WatcherSupervisor',start_link,[{'Elixir.Logger.Config',handlers,[]}]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-03-04 13:20:08 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.173.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,20}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}}},{'Elixir.Logger.App',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.172.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.174.0>,normal}]
+    links: [<0.172.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 164
+  neighbours:
+2018-03-04 13:20:54 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Logger.Watcher:init/1
+    pid: <0.179.0>
+    registered_name: []
+    exception error: {{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,20}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Logger.WatcherSupervisor','Elixir.Logger.Supervisor',<0.174.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.178.0>,<0.176.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 229
+  neighbours:
+2018-03-04 13:20:54 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,20}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Logger.WatcherSupervisor'},{mfargs,{'Elixir.Logger.WatcherSupervisor',start_link,[{'Elixir.Logger.Config',handlers,[]}]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-03-04 13:20:54 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.173.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,20}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}}},{'Elixir.Logger.App',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.172.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.174.0>,normal}]
+    links: [<0.172.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 164
+  neighbours:
+2018-03-04 13:22:31 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Logger.Watcher:init/1
+    pid: <0.179.0>
+    registered_name: []
+    exception error: {{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,20}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Logger.WatcherSupervisor','Elixir.Logger.Supervisor',<0.174.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.178.0>,<0.176.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 229
+  neighbours:
+2018-03-04 13:22:31 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,20}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Logger.WatcherSupervisor'},{mfargs,{'Elixir.Logger.WatcherSupervisor',start_link,[{'Elixir.Logger.Config',handlers,[]}]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-03-04 13:22:31 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.173.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,20}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}}},{'Elixir.Logger.App',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.172.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.174.0>,normal}]
+    links: [<0.172.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 164
+  neighbours:
+2018-03-04 13:22:46 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Logger.Watcher:init/1
+    pid: <0.179.0>
+    registered_name: []
+    exception error: {{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,20}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Logger.WatcherSupervisor','Elixir.Logger.Supervisor',<0.174.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.178.0>,<0.176.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 229
+  neighbours:
+2018-03-04 13:22:46 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,20}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Logger.WatcherSupervisor'},{mfargs,{'Elixir.Logger.WatcherSupervisor',start_link,[{'Elixir.Logger.Config',handlers,[]}]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-03-04 13:22:46 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.173.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,20}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}}},{'Elixir.Logger.App',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.172.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.174.0>,normal}]
+    links: [<0.172.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 164
+  neighbours:
+2018-03-04 13:23:01 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Logger.Watcher:init/1
+    pid: <0.179.0>
+    registered_name: []
+    exception error: {{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,24}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Logger.WatcherSupervisor','Elixir.Logger.Supervisor',<0.174.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.178.0>,<0.176.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 229
+  neighbours:
+2018-03-04 13:23:01 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,24}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Logger.WatcherSupervisor'},{mfargs,{'Elixir.Logger.WatcherSupervisor',start_link,[{'Elixir.Logger.Config',handlers,[]}]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-03-04 13:23:01 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.173.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,24}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}}},{'Elixir.Logger.App',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.172.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.174.0>,normal}]
+    links: [<0.172.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 169
+  neighbours:
+2018-03-04 13:24:40 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Logger.Watcher:init/1
+    pid: <0.179.0>
+    registered_name: []
+    exception error: {{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',foo,2,[{file,"lib/lager_backend.ex"},{line,72}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,22}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Logger.WatcherSupervisor','Elixir.Logger.Supervisor',<0.174.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.178.0>,<0.176.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 236
+  neighbours:
+2018-03-04 13:24:40 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',foo,2,[{file,"lib/lager_backend.ex"},{line,72}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,22}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Logger.WatcherSupervisor'},{mfargs,{'Elixir.Logger.WatcherSupervisor',start_link,[{'Elixir.Logger.Config',handlers,[]}]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-03-04 13:24:40 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.173.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',foo,2,[{file,"lib/lager_backend.ex"},{line,72}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,22}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}}},{'Elixir.Logger.App',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.172.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.174.0>,normal}]
+    links: [<0.172.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 170
+  neighbours:
+2018-03-04 13:25:13 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Logger.Watcher:init/1
+    pid: <0.179.0>
+    registered_name: []
+    exception error: {{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',foo,2,[{file,"lib/lager_backend.ex"},{line,72}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,22}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Logger.WatcherSupervisor','Elixir.Logger.Supervisor',<0.174.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.178.0>,<0.176.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 236
+  neighbours:
+2018-03-04 13:25:13 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',foo,2,[{file,"lib/lager_backend.ex"},{line,72}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,22}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Logger.WatcherSupervisor'},{mfargs,{'Elixir.Logger.WatcherSupervisor',start_link,[{'Elixir.Logger.Config',handlers,[]}]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-03-04 13:25:13 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.173.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',foo,2,[{file,"lib/lager_backend.ex"},{line,72}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,22}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}}},{'Elixir.Logger.App',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.172.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.174.0>,normal}]
+    links: [<0.172.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 170
+  neighbours:
+2018-03-04 13:25:20 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Logger.Watcher:init/1
+    pid: <0.170.0>
+    registered_name: []
+    exception error: {{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',foo,2,[{file,"lib/lager_backend.ex"},{line,72}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,22}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Logger.WatcherSupervisor','Elixir.Logger.Supervisor',<0.165.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.169.0>,<0.167.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 236
+  neighbours:
+2018-03-04 13:25:20 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',foo,2,[{file,"lib/lager_backend.ex"},{line,72}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,22}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Logger.WatcherSupervisor'},{mfargs,{'Elixir.Logger.WatcherSupervisor',start_link,[{'Elixir.Logger.Config',handlers,[]}]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-03-04 13:25:20 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.164.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',foo,2,[{file,"lib/lager_backend.ex"},{line,72}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,22}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}}},{'Elixir.Logger.App',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.163.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.165.0>,normal}]
+    links: [<0.163.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 170
+  neighbours:
+2018-03-04 13:26:10 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Logger.Watcher:init/1
+    pid: <0.179.0>
+    registered_name: []
+    exception error: {{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',foo,2,[{file,"lib/lager_backend.ex"},{line,73}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,22}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Logger.WatcherSupervisor','Elixir.Logger.Supervisor',<0.174.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.178.0>,<0.176.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 236
+  neighbours:
+2018-03-04 13:26:10 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',foo,2,[{file,"lib/lager_backend.ex"},{line,73}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,22}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Logger.WatcherSupervisor'},{mfargs,{'Elixir.Logger.WatcherSupervisor',start_link,[{'Elixir.Logger.Config',handlers,[]}]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-03-04 13:26:10 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.173.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',get,[nil,level,nil],[{file,"lib/keyword.ex"},{line,179}]},{'Elixir.LagerBackend',foo,2,[{file,"lib/lager_backend.ex"},{line,73}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,22}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}}},{'Elixir.Logger.App',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.172.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.174.0>,normal}]
+    links: [<0.172.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 169
+  neighbours:
+2018-03-04 13:26:56 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Logger.Watcher:init/1
+    pid: <0.179.0>
+    registered_name: []
+    exception error: {{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,24}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Logger.WatcherSupervisor','Elixir.Logger.Supervisor',<0.174.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.178.0>,<0.176.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 229
+  neighbours:
+2018-03-04 13:26:56 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,24}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Logger.WatcherSupervisor'},{mfargs,{'Elixir.Logger.WatcherSupervisor',start_link,[{'Elixir.Logger.Config',handlers,[]}]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-03-04 13:26:56 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.173.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,24}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}}},{'Elixir.Logger.App',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.172.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.174.0>,normal}]
+    links: [<0.172.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 176
+  neighbours:
+2018-03-04 13:27:59 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Logger.Watcher:init/1
+    pid: <0.179.0>
+    registered_name: []
+    exception error: {{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,24}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Logger.WatcherSupervisor','Elixir.Logger.Supervisor',<0.174.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.178.0>,<0.176.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 229
+  neighbours:
+2018-03-04 13:27:59 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,24}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Logger.WatcherSupervisor'},{mfargs,{'Elixir.Logger.WatcherSupervisor',start_link,[{'Elixir.Logger.Config',handlers,[]}]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-03-04 13:27:59 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.173.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,24}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}}},{'Elixir.Logger.App',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.172.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.174.0>,normal}]
+    links: [<0.172.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 176
+  neighbours:
+2018-03-04 13:28:39 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Logger.Watcher:init/1
+    pid: <0.179.0>
+    registered_name: []
+    exception error: {{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,24}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Logger.WatcherSupervisor','Elixir.Logger.Supervisor',<0.174.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.178.0>,<0.176.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 229
+  neighbours:
+2018-03-04 13:28:39 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,24}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Logger.WatcherSupervisor'},{mfargs,{'Elixir.Logger.WatcherSupervisor',start_link,[{'Elixir.Logger.Config',handlers,[]}]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-03-04 13:28:39 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.173.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{function_clause,[{'Elixir.LagerBackend',init,[[]],[{file,"lib/lager_backend.ex"},{line,12}]},{'Elixir.LagerBackend',init,1,[{file,"lib/lager_backend.ex"},{line,24}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerBackend','Elixir.LagerBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}}},{'Elixir.Logger.App',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.172.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.174.0>,normal}]
+    links: [<0.172.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 176
+  neighbours:
+2018-03-04 13:55:46 =ERROR REPORT====
+** Generic server 'Elixir.ExUnit.CaptureServer' terminating 
+** Last message in was {device_capture_on,capture_prompt,<0.194.0>}
+** When Server state == #{devices => {#{},#{}},log_captures => #{},log_status => nil}
+** Reason for termination == 
+** {badarg,[{erlang,unregister,[capture_prompt],[]},{'Elixir.ExUnit.CaptureServer',handle_call,3,[{file,"lib/ex_unit/capture_server.ex"},{line,47}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,636}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,665}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+** Client <0.193.0> stacktrace
+** [{gen,do_call,4,[{file,"gen.erl"},{line,169}]},{'Elixir.GenServer',call,3,[{file,"lib/gen_server.ex"},{line,827}]},{'Elixir.ExUnit.CaptureIO',do_capture_io,3,[{file,"lib/ex_unit/capture_io.ex"},{line,130}]},{'Elixir.LagerBackendTest','test greets the world',1,[{file,"test/lager_backend_test.exs"},{line,9}]},{'Elixir.ExUnit.Runner',exec_test,1,[{file,"lib/ex_unit/runner.ex"},{line,306}]},{timer,tc,1,[{file,"timer.erl"},{line,166}]},{'Elixir.ExUnit.Runner','-spawn_test/3-fun-1-',4,[{file,"lib/ex_unit/runner.ex"},{line,245}]}]
+2018-03-04 13:55:46 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.ExUnit.CaptureServer:init/1
+    pid: <0.180.0>
+    registered_name: 'Elixir.ExUnit.CaptureServer'
+    exception error: bad argument: [{erlang,unregister,[capture_prompt],[]},{'Elixir.ExUnit.CaptureServer',handle_call,3,[{file,"lib/ex_unit/capture_server.ex"},{line,47}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,636}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,665}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]
+    ancestors: ['Elixir.ExUnit.Supervisor',<0.177.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.178.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 316
+  neighbours:
+2018-03-04 13:55:46 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.ExUnit.Supervisor'}
+     Context:    child_terminated
+     Reason:     {badarg,[{erlang,unregister,[capture_prompt],[]},{'Elixir.ExUnit.CaptureServer',handle_call,3,[{file,"lib/ex_unit/capture_server.ex"},{line,47}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,636}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,665}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+     Offender:   [{pid,<0.180.0>},{id,'Elixir.ExUnit.CaptureServer'},{mfargs,{'Elixir.ExUnit.CaptureServer',start_link,[[]]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-03-04 13:56:56 =ERROR REPORT====
+** Generic server 'Elixir.ExUnit.CaptureServer' terminating 
+** Last message in was {device_capture_on,'Elixir.LagerBackend',<0.194.0>}
+** When Server state == #{devices => {#{},#{}},log_captures => #{},log_status => nil}
+** Reason for termination == 
+** {badarg,[{erlang,unregister,['Elixir.LagerBackend'],[]},{'Elixir.ExUnit.CaptureServer',handle_call,3,[{file,"lib/ex_unit/capture_server.ex"},{line,47}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,636}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,665}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+** Client <0.193.0> stacktrace
+** [{gen,do_call,4,[{file,"gen.erl"},{line,169}]},{'Elixir.GenServer',call,3,[{file,"lib/gen_server.ex"},{line,827}]},{'Elixir.ExUnit.CaptureIO',do_capture_io,3,[{file,"lib/ex_unit/capture_io.ex"},{line,130}]},{'Elixir.LagerBackendTest','test greets the world',1,[{file,"test/lager_backend_test.exs"},{line,9}]},{'Elixir.ExUnit.Runner',exec_test,1,[{file,"lib/ex_unit/runner.ex"},{line,306}]},{timer,tc,1,[{file,"timer.erl"},{line,166}]},{'Elixir.ExUnit.Runner','-spawn_test/3-fun-1-',4,[{file,"lib/ex_unit/runner.ex"},{line,245}]}]
+2018-03-04 13:56:56 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.ExUnit.CaptureServer:init/1
+    pid: <0.180.0>
+    registered_name: 'Elixir.ExUnit.CaptureServer'
+    exception error: bad argument: [{erlang,unregister,['Elixir.LagerBackend'],[]},{'Elixir.ExUnit.CaptureServer',handle_call,3,[{file,"lib/ex_unit/capture_server.ex"},{line,47}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,636}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,665}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]
+    ancestors: ['Elixir.ExUnit.Supervisor',<0.177.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.178.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 316
+  neighbours:
+2018-03-04 13:56:56 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.ExUnit.Supervisor'}
+     Context:    child_terminated
+     Reason:     {badarg,[{erlang,unregister,['Elixir.LagerBackend'],[]},{'Elixir.ExUnit.CaptureServer',handle_call,3,[{file,"lib/ex_unit/capture_server.ex"},{line,47}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,636}]},{gen_server,handle_msg,6,[{file,"gen_server.erl"},{line,665}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+     Offender:   [{pid,<0.180.0>},{id,'Elixir.ExUnit.CaptureServer'},{mfargs,{'Elixir.ExUnit.CaptureServer',start_link,[[]]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-03-04 16:40:15 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Logger.Watcher:init/1
+    pid: <0.199.0>
+    registered_name: []
+    exception error: {{case_clause,{'EXIT',{undef,[{'Elixir.LagerLogBackend',init,['Elixir.LagerLogBackend'],[]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Logger.WatcherSupervisor','Elixir.Logger.Supervisor',<0.194.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.198.0>,<0.196.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 218
+  neighbours:
+2018-03-04 16:40:15 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{undef,[{'Elixir.LagerLogBackend',init,['Elixir.LagerLogBackend'],[]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerLogBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerLogBackend','Elixir.LagerLogBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Logger.WatcherSupervisor'},{mfargs,{'Elixir.Logger.WatcherSupervisor',start_link,[{'Elixir.Logger.Config',handlers,[]}]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-03-04 16:40:15 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.193.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Logger.WatcherSupervisor',{'EXIT',{{badmatch,{error,{{{case_clause,{'EXIT',{undef,[{'Elixir.LagerLogBackend',init,['Elixir.LagerLogBackend'],[]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]},{child,undefined,{'Elixir.Logger.WatcherSupervisor',{'Elixir.Logger','Elixir.LagerLogBackend'}},{'Elixir.Logger.Watcher',start_link,[{'Elixir.Logger','Elixir.LagerLogBackend','Elixir.LagerLogBackend'}]},transient,5000,worker,['Elixir.Logger.Watcher']}}}},[{'Elixir.Logger.WatcherSupervisor','-start_link/1-fun-0-',2,[{file,"lib/logger/watcher_supervisor.ex"},{line,14}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,"lib/enum.ex"},{line,1899}]},{'Elixir.Logger.WatcherSupervisor',start_link,1,[{file,"lib/logger/watcher_supervisor.ex"},{line,13}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,start_children,3,[{file,"supervisor.erl"},{line,348}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,314}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]}]}}}},{'Elixir.Logger.App',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.192.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.194.0>,normal}]
+    links: [<0.192.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 253
+  neighbours:
+2018-03-04 16:58:42 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Logger.Watcher:init/1
+    pid: <0.236.0>
+    registered_name: []
+    exception error: {{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',merge,[nil,[]],[{file,"lib/keyword.ex"},{line,673}]},{'Elixir.LogLagerBackend',init,1,[{file,"lib/log_lager_backend.ex"},{line,18}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Logger.WatcherSupervisor','Elixir.Logger.Supervisor',<0.194.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.198.0>,<0.196.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 230
+  neighbours:
+2018-03-04 17:00:58 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Logger.Watcher:init/1
+    pid: <0.209.0>
+    registered_name: []
+    exception error: {{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',merge,[nil,[]],[{file,"lib/keyword.ex"},{line,673}]},{'Elixir.LogLagerBackend',init,1,[{file,"lib/log_lager_backend.ex"},{line,18}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Logger.WatcherSupervisor','Elixir.Logger.Supervisor',<0.167.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.171.0>,<0.169.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 230
+  neighbours:
+2018-03-04 17:03:13 =CRASH REPORT====
+  crasher:
+    initial call: Elixir.Logger.Watcher:init/1
+    pid: <0.218.0>
+    registered_name: []
+    exception error: {{case_clause,{'EXIT',{function_clause,[{'Elixir.Keyword',merge,[nil,[]],[{file,"lib/keyword.ex"},{line,673}]},{'Elixir.LogLagerBackend',init,1,[{file,"lib/log_lager_backend.ex"},{line,18}]},{gen_event,server_add_handler,4,[{file,"gen_event.erl"},{line,469}]},{gen_event,handle_msg,6,[{file,"gen_event.erl"},{line,314}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}}},[{'Elixir.Logger.Watcher',init,1,[{file,"lib/logger/watcher.ex"},{line,25}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Logger.WatcherSupervisor','Elixir.Logger.Supervisor',<0.176.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.180.0>,<0.178.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 230
+  neighbours:
