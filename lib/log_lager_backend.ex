@@ -1,5 +1,7 @@
 defmodule LogLagerBackend do
-  @moduledoc false
+  @moduledoc """
+  A logger backend that forwards log messages to lager.
+  """
 
   alias Logger.Formatter
 
