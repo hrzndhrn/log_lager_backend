@@ -1,3 +1,5 @@
 use Mix.Config
 
-import_config "#{Mix.env()}.exs"
+config :logger,
+  handle_otp_reports: false
+
