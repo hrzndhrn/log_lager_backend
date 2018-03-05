@@ -20,7 +20,7 @@ defmodule LogLagerBackend.MixProject do
   end
 
   defp description() do
-    "Beta! A logger backend forwards log messages to lager."
+    "A logger backend that forwards log messages to lager."
   end
 
   defp deps do
