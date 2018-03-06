@@ -15,7 +15,7 @@ defmodule LogLagerBackend.MixProject do
 
   def application do
     [
-      extra_applications: [:lager, :logger]
+      extra_applications: [:lager]
     ]
   end
 
