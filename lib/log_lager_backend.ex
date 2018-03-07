@@ -17,8 +17,8 @@ defmodule LogLagerBackend do
   def init(__MODULE__), do: init({__MODULE__, []})
 
   def init({__MODULE__, opts}) when is_list(opts) do
-    config = Keyword.merge(get_env(), opts)
-    {:ok, do_init(config, %__MODULE__{})}
+    config = Keyword.merge(Application.get_env(:logger, __MODULE__, []), opts)
+    {:ok, init(config, %__MODULE__{})}
   end
 
   def handle_call({:configure, options}, state) do
@@ -95,9 +95,9 @@ defmodule LogLagerBackend do
 
   defp meet_level?(lvl, min), do: Logger.compare_levels(lvl, min) != :lt
 
-  defp do_init(nil, state), do: do_init([], state)
+  defp init(nil, state), do: init([], state)
 
-  defp do_init(config, state) do
+  defp init(config, state) do
     level = Keyword.get(config, :level)
     format = Formatter.compile(Keyword.get(config, :format))
     metadata = Keyword.get(config, :metadata, [])
@@ -111,15 +111,8 @@ defmodule LogLagerBackend do
   end
 
   defp configure(options, state) do
-    config = Keyword.merge(get_env(), options)
+    config = Keyword.merge(Application.get_env(:logger, __MODULE__, []), options)
     Application.put_env(:logger, __MODULE__, config)
-    do_init(config, state)
-  end
-
-  defp get_env do
-    case Application.get_env(:logger, __MODULE__) do
-      nil -> []
-      config -> config
-    end
+    init(config, state)
   end
 end
