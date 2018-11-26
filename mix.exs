@@ -35,7 +35,7 @@ defmodule LogLagerBackend.MixProject do
     [
       maintainers: ["Marcus Kruse"],
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/hrzndhrn/lager_log_backend"}
+      links: %{"GitHub" => "https://github.com/hrzndhrn/log_lager_backend"}
     ]
   end
 end
