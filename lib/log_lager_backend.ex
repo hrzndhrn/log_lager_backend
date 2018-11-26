@@ -111,7 +111,9 @@ defmodule LogLagerBackend do
   end
 
   defp configure(options, state) do
-    config = Keyword.merge(Application.get_env(:logger, __MODULE__, []), options)
+    config =
+      Keyword.merge(Application.get_env(:logger, __MODULE__, []), options)
+
     Application.put_env(:logger, __MODULE__, config)
     init(config, state)
   end

@@ -10,35 +10,36 @@ defmodule LogLagerBackendTest do
 
     :lager.set_loglevel(:lager_console_backend, :info)
 
-    on_exit fn ->
-    	Process.sleep(1000)
+    on_exit(fn ->
+      Process.sleep(1000)
       Logger.remove_backend(LogLagerBackend)
       Logger.add_backend(:console, console_config)
-    end
+    end)
   end
 
   def set_log_lager_backend(config \\ []) do
     Logger.remove_backend(:console)
-    Logger.add_backend LogLagerBackend
+    Logger.add_backend(LogLagerBackend)
     Logger.configure_backend(LogLagerBackend, config)
   end
 
-	@tag :console_backend
+  @tag :console_backend
   test "just log via :console" do
     msg = "Spare me the info"
-		rgx = ~r/\e\[22m\n[\d:\.]+\s+\[info\]\s+Spare.me.the.info\n\e\[0m/
+    rgx = ~r/\e\[22m\n[\d:\.]+\s+\[info\]\s+Spare.me.the.info\n\e\[0m/
 
-    log = capture_log fn ->
-      Logger.info(msg)
-    end
+    log =
+      capture_log(fn ->
+        Logger.info(msg)
+      end)
 
     assert Regex.match?(rgx, log)
   end
 
   test "log with metadata" do
-		Logger.info(
-			"log with metadata ------------------------------------------------------"
-		)
+    Logger.info(
+      "log with metadata ------------------------------------------------------"
+    )
 
     set_log_lager_backend(
       format: "$message - $metadata",
@@ -54,14 +55,12 @@ defmodule LogLagerBackendTest do
   end
 
   test "otp reports should be not logged twice" do
-		Logger.info(
-			"Otp reports should be not logged twice. --------------------------------"
-		)
+    Logger.info(
+      "Otp reports should be not logged twice. --------------------------------"
+    )
 
-		set_log_lager_backend(
-			format: ">> $message <<"
-		)
+    set_log_lager_backend(format: ">> $message <<")
 
-    :error_logger.error_msg 'The one and only!'
-	end
+    :error_logger.error_msg('The one and only!')
+  end
 end
