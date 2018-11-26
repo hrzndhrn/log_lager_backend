@@ -4,7 +4,7 @@ defmodule LogLagerBackend.MixProject do
   def project do
     [
       app: :log_lager_backend,
-      version: "0.0.2",
+      version: "0.0.3",
       elixir: "~> 1.6",
       description: description(),
       package: package(),
