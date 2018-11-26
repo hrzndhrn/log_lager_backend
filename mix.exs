@@ -25,8 +25,8 @@ defmodule LogLagerBackend.MixProject do
 
   defp deps do
     [
-      {:credo, "~> 0.8", only: [:dev, :test]},
-      {:ex_doc, "~> 0.16", only: :dev, runtime: false},
+      {:credo, "~> 1.0", only: [:dev, :test]},
+      {:ex_doc, "~> 0.18", only: :dev, runtime: false},
       {:lager, "~> 3.6"}
     ]
   end
