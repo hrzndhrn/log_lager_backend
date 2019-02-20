@@ -10,7 +10,7 @@ First, add LogLagerBackend to your mix.exs dependencies:
 
 ```
 def deps do
-  [{:xema, "~> 0.0.1"}]
+  [{:log_lager_backend, "~> 0.0.3"}]
 end
 ```
 
