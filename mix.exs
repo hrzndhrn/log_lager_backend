@@ -5,7 +5,7 @@ defmodule LogLagerBackend.MixProject do
     [
       app: :log_lager_backend,
       version: "0.0.3",
-      elixir: "~> 1.6",
+      elixir: "~> 1.8",
       description: description(),
       package: package(),
       start_permanent: Mix.env() == :prod,
